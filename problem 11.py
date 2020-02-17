@@ -13,3 +13,12 @@ print(whole_bar)
 
 extra = bars % people
 print(extra)
+
+extra_squares = extra * SQUARE
+print(extra_squares)
+
+squares_each = extra_squares // people
+print(squares_each)
+
+leftover = extra_squares % people
+print(leftover)
