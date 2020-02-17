@@ -7,11 +7,12 @@ cap = int(input("How many passengers can each bus take? "))
 kid = int(input("How many chidlren are going on the trip? "))
 
 
-bus_float = kid / cap
-print(bus_float)
+bus = math.ceil(kid / cap)
+avg_kid = kid / bus
 
-bus_int = math.ceil(bus_float)
-print(bus_int)
 
-avg_kid = kid / bus_int
-print(avg_kid)
+print("--------------------")
+print("Capacity: {} passengers".format(cap))
+print("Number of children: {}".format(kid))
+print("Buses needed: {}".format(bus))
+print("Average children per bus: {:.2f}".format(avg_kid))
