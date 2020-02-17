@@ -9,16 +9,23 @@ bars = int(input("How many chocolate bars do you have? "))
 people = int(input("How many people are there to share amongst? "))
 
 whole_bar = bars // people
-print(whole_bar)
+#print(whole_bar)
 
 extra = bars % people
-print(extra)
+#print(extra)
 
 extra_squares = extra * SQUARE
-print(extra_squares)
+#print(extra_squares)
 
 squares_each = extra_squares // people
-print(squares_each)
+#print(squares_each)
 
 leftover = extra_squares % people
-print(leftover)
+#print(leftover)
+
+print("---------------------")
+print("Number of chocolate bars: {}".format(bars))
+print("Number of people: {}".format(people))
+print("Whole choclate  bars each: {}".format(whole_bar))
+print("Extra squares each: {}".format(squares_each))
+print("Squares left over: {}".format(leftover))
