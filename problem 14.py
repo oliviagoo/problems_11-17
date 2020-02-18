@@ -8,7 +8,11 @@ SEC_MIN = 60
 
 sec =  int(input("How many seconds? "))
 
-minutes = sec // 60
-print(minutes)
-extra_sec = sec % 60
-print(extra_sec)
+minutes = sec // SEC_MIN
+#print(minutes)
+extra_sec = sec % SEC_MIN
+#print(extra_sec)
+
+
+print("-------------------")
+print("{} seconds is {} minutes and {} seconds".format(sec, minutes, extra_sec))
