@@ -7,7 +7,14 @@ TEAM_NUM = 9
 
 kid = int(input("How many children want to play netball? "))
 
+
 teams = kid // TEAM_NUM
-print(teams)
+#print(teams)
 leftover = kid % TEAM_NUM
-print(leftover)
+#print(leftover)
+
+
+print("------------------")
+print("Number of children: {}".format(kid))
+print("Number of teams: {}".format(teams))
+print("Number of children left over: {}".format(leftover))
